@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pubmed-cli"
+version = "0.1.0"
+description = "CLI tool to fetch company-authored research papers from PubMed"
+authors = ["Aarush Goel <aarushgoel2004@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "pubmed_cli" }]
+license = "MIT"
+
+[tool.poetry.scripts]
+get-papers-list = "pubmed_cli.main:main"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.3.1"
+requests = "^2.32.4"
+biopython = "^1.85"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

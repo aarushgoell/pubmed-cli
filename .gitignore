@@ -1,0 +1,24 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment (Poetry creates .venv by default)
+.venv/
+
+# Distribution / build files
+dist/
+build/
+*.egg-info/
+
+# OS metadata files
+.DS_Store
+Thumbs.db
+
+# Logs and Jupyter temp
+*.log
+.ipynb_checkpoints/
+
+# VSCode or JetBrains IDE folders
+.vscode/
+.idea/
